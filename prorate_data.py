@@ -4,9 +4,6 @@
 import csv
 from pprint import pprint
 
-#def main():
-#init_parse('J:/AxeCreatives/Tasks/ProrateTask.csv')
-
 def init_parse(filename):
 	file = open(filename)
 	reader = csv.reader(file, delimiter=',')
@@ -81,7 +78,6 @@ def extract_data(datalist, customer_name_col, offer_name_col, charge_type_col, c
 			longest_row_count = nextinstance
 
 	extractlist.append(longest_row_count)
-	pprint(extractlist)
 	return(extractlist)
 
 
